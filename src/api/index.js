@@ -1,6 +1,7 @@
 import axios from 'axios';
-const API = axios.create({baseURL:'http://localhost:5000'})
+const API = axios.create({baseURL:'https://memories-if8s.onrender.com/posts'})
 // const url = 'https://memories-if8s.onrender.com/posts';
+// http://localhost:5000
 API.interceptors.request.use((req)=>{
   if(localStorage.getItem('profile')){
     req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`;
