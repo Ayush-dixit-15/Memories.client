@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API = axios.create({baseURL:'https://memories-if8s.onrender.com/posts'})
+const API = axios.create({baseURL:'https://memories-if8s.onrender.com'})
 // const url = 'https://memories-if8s.onrender.com/posts';
 // http://localhost:5000
 API.interceptors.request.use((req)=>{
