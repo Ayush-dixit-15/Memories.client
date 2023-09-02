@@ -11,6 +11,7 @@ import {
 import useStyles from "./styles";
 import Icon from './icon';
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import { auth,provider } from "../../firebase";
 import Input from "./Input";
 import { GoogleLogin} from '@react-oauth/google';
 import { useDispatch } from "react-redux";
